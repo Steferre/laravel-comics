@@ -1,0 +1,21 @@
+.topHeader {
+    background-color: $bgBlue;
+    color: $txtWhite;
+    padding: 5px 0;
+}
+
+.topHeadTxt {
+    display: flex;
+    justify-content: flex-end;
+        span {
+            margin-left: 25px;
+            font-size: 10px;
+        }
+}
+
+.jumboImg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}

@@ -1,0 +1,126 @@
+/*colori*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.my_flex {
+  display: flex;
+  align-items: center;
+}
+
+.horListStyle {
+  display: flex;
+  list-style: none;
+}
+
+/*style tag a*/
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.topHeader {
+  background-color: #0282F9;
+  color: #FFF;
+  padding: 5px 0;
+}
+
+.topHeadTxt {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topHeadTxt span {
+  margin-left: 25px;
+  font-size: 10px;
+}
+
+.jumboImg {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.dc_logo {
+  width: 50px;
+  height: 50px;
+}
+
+.linksBox {
+  flex-grow: 1;
+}
+
+.linksBox .horListStyle {
+  justify-content: space-around;
+}
+
+.linksBox .horListStyle li {
+  padding: 35px 0;
+  border-bottom: 3px solid transparent;
+}
+
+.linksBox .horListStyle li a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #46464C;
+}
+
+.linksBox .horListStyle li:nth-child(2) {
+  border-bottom: 3px solid #0282F9;
+}
+
+.linksBox .horListStyle li:nth-child(2) a {
+  color: #0282F9;
+}
+
+.inputBox {
+  display: flex;
+  position: relative;
+}
+
+.inputBox input {
+  width: 130px;
+  border: none;
+  border-bottom: 2px solid #0282F9;
+  outline: none;
+  padding-left: 15px;
+  padding-right: 25px;
+}
+
+.inputBox input::-moz-placeholder {
+  text-align: end;
+  color: #46464C;
+}
+
+.inputBox input:-ms-input-placeholder {
+  text-align: end;
+  color: #46464C;
+}
+
+.inputBox input::placeholder {
+  text-align: end;
+  color: #46464C;
+}
+
+.inputBox i {
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: #46464C;
+}
+

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.my_flex {
+    display: flex;
+    align-items: center;
+}
+
+.horListStyle {
+    display: flex;
+    list-style: none;
+}
+
+/*style tag a*/
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
