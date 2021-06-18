@@ -15,6 +15,10 @@
 
 .my_flex {
   display: flex;
+}
+
+.my_flex_centerV {
+  display: flex;
   align-items: center;
 }
 
@@ -122,5 +126,89 @@ a {
   top: 0;
   right: 5px;
   color: #46464C;
+}
+
+footer {
+  position: relative;
+}
+
+.topFooter {
+  background-repeat: no-repeat;
+}
+
+.textBox {
+  width: 55%;
+  padding-top: 50px;
+}
+
+.columnText {
+  flex-basis: calc(100% / 3);
+}
+
+.columnText h4 {
+  color: #FFF;
+}
+
+.columnText ul {
+  list-style: none;
+}
+
+.columnText ul li a {
+  font-size: 10px;
+  color: #959595;
+}
+
+.rights {
+  color: #959595;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.rights a {
+  color: #0282F9;
+}
+
+.logoBgBox {
+  width: 45%;
+}
+
+.logoBgBox img {
+  width: 100%;
+}
+
+.signUpBtn {
+  flex-grow: 1;
+}
+
+.bottomFooter {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 100%;
+  background-color: #303030;
+  padding: 25px 0;
+  z-index: 1;
+}
+
+.socialBox {
+  width: 40%;
+  justify-content: space-between;
+}
+
+.socialBox a {
+  width: 40%;
+  text-align: end;
+  font-weight: bold;
+  color: #0282F9;
+}
+
+.socialBox .horListStyle {
+  width: 50%;
+  justify-content: space-between;
+}
+
+.socialBox .horListStyle li a img {
+  width: 30px;
+  height: 30px;
 }
 

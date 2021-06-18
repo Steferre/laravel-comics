@@ -1,8 +1,8 @@
 <footer>
-    <div class="topFooter">
-        <div class="container">
+    <div class="topFooter" style="background-image: url('{{asset('images/footer-bg.jpg')}}')">
+        <div class="container my_flex">
             <div class="textBox">
-                <div class="colBox">
+                <div class="colBox my_flex">
                     <div class="columnText">
                         <h4>DC COMICS</h4>
                         <ul>
@@ -59,11 +59,11 @@
         </div>
     </div>
     <div class="bottomFooter">
-        <div class="container">
+        <div class="container my_flex_centerV">
             <div class="signUpBtn">
                 <a href="#">sign-up now!</a>
             </div>
-            <div class="socialBox">
+            <div class="socialBox my_flex_centerV">
                 <a href="#">follow us</a>
                 <ul class="horListStyle">
                     <li><a href="#"><img src="{{ asset('images/footer-facebook.png') }}" alt="social btn link"></a></li>

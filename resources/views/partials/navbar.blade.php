@@ -1,5 +1,5 @@
 <nav>
-    <div class="container my_flex">
+    <div class="container my_flex_centerV">
         <img src="{{ asset('images/dc-logo.png') }}" class="dc_logo" alt="logo dc">
         <div class="linksBox">
             <ul class="horListStyle">

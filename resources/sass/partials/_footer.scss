@@ -1,0 +1,82 @@
+footer {
+    position: relative;
+}
+
+.topFooter {
+    background-repeat: no-repeat;
+}
+
+.textBox {
+    width: 55%;
+    padding-top: 50px;
+}
+
+.columnText {
+    flex-basis: calc(100% / 3);
+    h4 {
+        color: #FFF;
+    }
+    ul {
+        list-style: none;
+        li {
+            a {
+                font-size: 10px;
+                color: #959595;
+            }
+        }
+    }
+}
+
+.rights {
+    color: #959595;
+    font-size: 10px;
+    margin-top: 10px;
+    a {
+        color: $bgBlue;
+    }
+}
+
+.logoBgBox {
+    width: 45%;
+    img {
+        width: 100%;
+    }
+}
+
+.signUpBtn {
+    flex-grow: 1;
+}
+
+
+.bottomFooter {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    background-color: #303030;
+    padding: 25px 0;
+    z-index: 1;
+}
+
+.socialBox {
+    width: 40%;
+    justify-content: space-between;
+    a { 
+        width: 40%;
+        text-align: end;
+        font-weight: bold;
+        color: $bgBlue;
+    }
+    .horListStyle {
+        width: 50%;
+        justify-content: space-between;
+        li {
+            a {
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
