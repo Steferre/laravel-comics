@@ -1,0 +1,85 @@
+main {
+    position: relative;
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    .my_btn_large {
+        position: absolute;
+        top: -25px;
+        left: 190px;
+        @include my_btn;
+        padding: 10px 20px;
+        a {
+            color: $txtWhite;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+        .my_btn {
+            @include my_btn;
+            width: 170px;
+            padding: 10px;
+            a {
+                color: $txtWhite;
+                font-size: 10px;
+                font-weight: bold;
+            }  
+        }
+    }
+}
+
+.comicsBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .comicsCard {
+        flex-basis: calc(100% / 6);
+        padding: 0 5px;
+        .comicImg {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            object-position: top;
+        }
+        h5 {
+            font-size: 10px;
+            margin: 5px 0 35px;
+            a {
+                color: $txtWhite;
+            }
+        }
+    }
+}
+
+.blueBox {
+    position: absolute;
+    width: 100%;
+    bottom: -40px;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    background-color: $bgBlue;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        a {
+            color: $txtWhite;
+            display: flex;
+            align-items: center;
+            padding: 30px 0;
+            i {
+                font-size: 40px;
+            }
+            span {
+                font-size: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

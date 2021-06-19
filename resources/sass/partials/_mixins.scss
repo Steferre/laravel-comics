@@ -1,0 +1,6 @@
+@mixin my_btn {
+    background-color: $bgBlue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
