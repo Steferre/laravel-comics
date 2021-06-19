@@ -15,6 +15,7 @@ footer {
     flex-basis: calc(100% / 3);
     h4 {
         color: #FFF;
+        margin: 10px 0;
     }
     ul {
         list-style: none;
@@ -33,6 +34,7 @@ footer {
     margin-top: 10px;
     a {
         color: $bgBlue;
+        text-transform: lowercase;
     }
 }
 
@@ -45,6 +47,11 @@ footer {
 
 .signUpBtn {
     flex-grow: 1;
+    a {
+       color: $txtWhite;
+       border: 2px solid $bgBlue;
+       padding: 10px; 
+    }
 }
 
 
