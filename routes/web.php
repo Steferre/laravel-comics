@@ -22,3 +22,15 @@ Route::get('/', function () {
 
     return view('myHomepage', $comicsDataArray);
 });
+
+Route::get('/comicPage1', function () {
+    $comicsData = config('comics');
+
+    $comicsDataArray = [
+        "comicsList" => $comicsData
+    ]; 
+    
+    return view('comicPage1', $comicsDataArray);
+})->name('comicPage1');
+
+

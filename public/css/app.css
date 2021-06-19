@@ -13,6 +13,12 @@
   margin: 0 auto;
 }
 
+.containerMCP {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
 .my_flex {
   display: flex;
 }
@@ -238,6 +244,122 @@ main .wrapper .my_btn a {
 .blueBox .container a span {
   font-size: 10px;
   margin-left: 10px;
+}
+
+.mainComicPage {
+  position: relative;
+  background-color: #FFF;
+  padding: 0;
+}
+
+.mainComicPage .blueLine {
+  background-color: #0282F9;
+  height: 40px;
+  position: relative;
+}
+
+.mainComicPage .blueLine img {
+  position: absolute;
+  top: -160px;
+  left: 320px;
+  width: 110px;
+  height: 190px;
+}
+
+.contentBox {
+  display: flex;
+  padding: 20px;
+}
+
+.contentBox .lxSide {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.contentBox .lxSide h2 {
+  text-transform: uppercase;
+  color: #003F5E;
+}
+
+.contentBox .lxSide .greenBar {
+  display: flex;
+  background-color: #55BA59;
+  border-bottom: 1px solid #357739;
+  font-size: 12px;
+  margin: 15px 0;
+}
+
+.contentBox .lxSide .greenBar .price {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.contentBox .lxSide .greenBar .price span {
+  color: #89E575;
+}
+
+.contentBox .lxSide .greenBar .price span strong {
+  color: #FFF;
+}
+
+.contentBox .lxSide .greenBar .avBtn {
+  border-left: 1px solid #357739;
+  padding: 10px 20px;
+}
+
+.contentBox .lxSide .greenBar .avBtn a {
+  color: #FFF;
+}
+
+.contentBox .lxSide p {
+  color: #555555;
+  font-size: 12px;
+}
+
+.contentBox .rxSide {
+  width: 20%;
+  padding-left: 20px;
+}
+
+.contentBox .rxSide .fakeImg {
+  width: 100%;
+  height: 50%;
+  background-color: violet;
+}
+
+.mainBtmHalf {
+  border-top: 1px solid #E3E3E3;
+  background-color: #F6F6F6;
+  padding-bottom: 150px;
+}
+
+.mainBtmHalf .containerMCP {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.mainBtmHalf .containerMCP .talentBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainBtmHalf .containerMCP .talentBox .artBox {
+  display: flex;
+  border-top: 1px solid #E3E3E3;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.mainBtmHalf .containerMCP .talentBox .artBox .boxTitle {
+  width: 20%;
+}
+
+.mainBtmHalf .containerMCP .talentBox .artBox span a {
+  font-size: 10px;
+  text-transform: capitalize;
 }
 
 footer {

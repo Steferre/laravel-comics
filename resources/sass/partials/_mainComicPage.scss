@@ -1,0 +1,99 @@
+.mainComicPage {
+    position: relative;
+    background-color: $txtWhite;
+    padding: 0;
+    .blueLine {
+        background-color: $bgBlue;
+        height: 40px;
+        position: relative;
+        img {
+            position: absolute;
+            top: -160px;
+            left: 320px;
+            width: 110px;
+            height: 190px;
+        }
+    }
+}
+
+.contentBox {
+    display: flex;
+    padding: 20px;
+    .lxSide {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        h2 {
+            text-transform: uppercase;
+            color: #003F5E;
+        }
+        .greenBar {
+            display: flex;
+            background-color: #55BA59;
+            border-bottom: 1px solid #357739;
+            font-size: 12px;
+            margin: 15px 0;
+            .price {
+                flex-grow: 1;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 15px;
+                span {
+                    color: #89E575;
+                    strong {
+                        color: $txtWhite;
+                    }
+                }
+            }
+            .avBtn {
+                border-left: 1px solid #357739;
+                padding: 10px 20px;
+                a {
+                    color: $txtWhite;
+                } 
+            }
+        }
+        p {
+            color: #555555;
+            font-size: 12px;
+        }
+    }
+    .rxSide {
+        width: 20%;
+        padding-left: 20px;
+        .fakeImg {
+            width: 100%;
+            height: 50%;
+            background-color: violet;
+        }
+    }
+}
+
+.mainBtmHalf {
+    border-top: 1px solid #E3E3E3;
+    background-color: #F6F6F6;
+    padding-bottom: 150px;
+    .containerMCP {
+        display: flex;
+        flex-basis: 50%;
+        .talentBox {
+            display: flex;
+            flex-direction: column;
+            .artBox {
+                display: flex;
+                border-top: 1px solid #E3E3E3;
+                border-bottom: 1px solid #E3E3E3;
+                .boxTitle {
+                    width: 20%;
+                }
+                span {
+                    a {
+                        font-size: 10px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+}

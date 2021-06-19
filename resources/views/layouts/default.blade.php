@@ -12,7 +12,7 @@
 <body>
 @include('partials.header')
 
-@include('partials.mainHome')
+@yield('content')
     
 @include('partials.footer')    
 </body>

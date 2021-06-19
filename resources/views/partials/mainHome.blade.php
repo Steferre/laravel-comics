@@ -1,5 +1,3 @@
-
-
 <main>
     <div class="my_btn_large">
         <a href="#">current series</a>
