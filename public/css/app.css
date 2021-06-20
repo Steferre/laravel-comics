@@ -268,7 +268,7 @@ main .wrapper .my_btn a {
 
 .contentBox {
   display: flex;
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
 }
 
 .contentBox .lxSide {
@@ -333,33 +333,97 @@ main .wrapper .my_btn a {
 
 .mainBtmHalf {
   border-top: 1px solid #E3E3E3;
+  border-bottom: 1px solid #E3E3E3;
   background-color: #F6F6F6;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .mainBtmHalf .containerMCP {
   display: flex;
-  flex-basis: 50%;
+  padding: 20px;
 }
 
-.mainBtmHalf .containerMCP .talentBox {
+.mainBtmHalf .containerMCP .tableBox {
   display: flex;
   flex-direction: column;
+  flex-basis: 50%;
+  padding-right: 10px;
 }
 
-.mainBtmHalf .containerMCP .talentBox .artBox {
+.mainBtmHalf .containerMCP .tableBox h3 {
+  margin-bottom: 15px;
+  color: #003F5E;
+}
+
+.mainBtmHalf .containerMCP .tableBox .rowBox {
   display: flex;
   border-top: 1px solid #E3E3E3;
   border-bottom: 1px solid #E3E3E3;
+  padding: 10px 0;
 }
 
-.mainBtmHalf .containerMCP .talentBox .artBox .boxTitle {
-  width: 20%;
+.mainBtmHalf .containerMCP .tableBox .rowBox .boxTitle {
+  width: 30%;
+  display: flex;
 }
 
-.mainBtmHalf .containerMCP .talentBox .artBox span a {
+.mainBtmHalf .containerMCP .tableBox .rowBox .boxTitle span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #003F5E;
+}
+
+.mainBtmHalf .containerMCP .tableBox .rowBox .boxList {
+  width: 70%;
+  display: flex;
+}
+
+.mainBtmHalf .containerMCP .tableBox .rowBox .boxList a {
+  color: #0282F9;
+}
+
+.mainBtmHalf .containerMCP .tableBox .rowBox .boxList span {
+  font-size: 14px;
+}
+
+.mainBtmHalf .containerMCP .tableBox .rowBox .boxList span a {
   font-size: 10px;
+  color: #0282F9;
   text-transform: capitalize;
+}
+
+.mainBtmHalf .containerMCP .tableBox .rowBox .lineH {
+  line-height: 10px;
+}
+
+.btnBanner {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  background-color: #F6F6F6;
+  z-index: 1;
+}
+
+.btnBanner .containerMCP {
+  display: flex;
+}
+
+.btnBanner .containerMCP a {
+  flex-basis: calc(100% / 4);
+}
+
+.btnBanner .containerMCP a .bannerCard {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.btnBanner .containerMCP a .bannerCard img {
+  background-color: #9FA0AD;
+  width: 40px;
+  height: 50px;
 }
 
 footer {

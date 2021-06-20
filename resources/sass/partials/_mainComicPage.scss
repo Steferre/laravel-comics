@@ -18,7 +18,7 @@
 
 .contentBox {
     display: flex;
-    padding: 20px;
+    padding: 20px 20px 50px 20px;
     .lxSide {
         display: flex;
         flex-direction: column;
@@ -72,26 +72,78 @@
 
 .mainBtmHalf {
     border-top: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
     background-color: #F6F6F6;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
+    margin-bottom: 20px;
     .containerMCP {
         display: flex;
-        flex-basis: 50%;
-        .talentBox {
+        padding: 20px;
+        .tableBox {
             display: flex;
             flex-direction: column;
-            .artBox {
+            flex-basis: 50%;
+            padding-right: 10px;
+            h3 {
+                margin-bottom: 15px;
+                color: #003F5E;
+            }
+            .rowBox {
                 display: flex;
                 border-top: 1px solid #E3E3E3;
                 border-bottom: 1px solid #E3E3E3;
+                padding: 10px 0;
                 .boxTitle {
-                    width: 20%;
-                }
-                span {
-                    a {
-                        font-size: 10px;
-                        text-transform: capitalize;
+                    width: 30%;
+                    display: flex;
+                    span {
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: #003F5E;
                     }
+                }
+                .boxList {
+                    width: 70%;
+                    display: flex;
+                    a {
+                        color: $bgBlue;
+                    }
+                    span {
+                        font-size: 14px;
+                        a {
+                            font-size: 10px;
+                            color: $bgBlue;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+                .lineH {
+                    line-height: 10px;
+                }
+            }
+        }
+    }
+}
+
+.btnBanner {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background-color: #F6F6F6;
+    z-index: 1;
+    .containerMCP {
+        display: flex;
+        a {
+            flex-basis: calc(100% / 4);
+            .bannerCard {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                img {
+                    background-color: #9FA0AD;
+                    width: 40px;
+                    height: 50px;
                 }
             }
         }
