@@ -10,10 +10,10 @@
     <div class="container">
         <div class="wrapper">
             <div class="comicsBox">
-            @foreach($comicsList as $singleComics)
+            @foreach($comicsList as $key => $singleComics)
                 <div class="comicsCard">
-                    <a href="/comicPage1"><img src="{{ $singleComics['thumb'] }}" class="comicImg" alt="comics poster"></a>
-                    <h5><a href="#">{{ $singleComics['series'] }}</a></h5>
+                    <a href="{{ route('comicPage', ['index' => $key]) }}"><img src="{{ $singleComics['thumb'] }}" class="comicImg" alt="comics poster"></a>
+                    <h5><a href="{{ route('comicPage', ['index' => $key]) }}">{{ $singleComics['series'] }}</a></h5>
                 </div> 
             @endforeach
             </div>
@@ -25,23 +25,23 @@
     <div class="blueBox">
         <div class="container">
             <a href="#">
-                <i class="fa fa-tablet"></i>
+                <img src="{{ asset('images/buy-comics-digital-comics.png') }}" alt="immagine">
                 <span>DIGITAL COMICS</span>
             </a>
             <a href="#">
-                <i class="fa fa-clone"></i>
+                <img src="{{ asset('images/buy-comics-merchandise.png') }}" alt="immagine">
                 <span>DC MERCHANDISE</span>
             </a>
             <a href="#">
-                <i class="fa fa-clone"></i>
+                <img src="{{ asset('images/buy-comics-subscriptions.png') }}" alt="immagine">
                 <span>SUBSCRIPTION</span>
             </a>
             <a href="#">
-                <i class="fa fa-map-marker"></i>
+                <img src="{{ asset('images/buy-comics-shop-locator.png') }}" alt="immagine">
                 <span>COMIC SHOP LOCATOR</span>
             </a>
             <a href="#">
-                <i class="fa fa-credit-card"></i>
+                <img src="{{ asset('images/buy-dc-power-visa.svg') }}" alt="immagine">
                 <span>DC POWER VISA</span>
             </a>
         </div>

@@ -20,7 +20,9 @@
     <div class="blueBox">
         <div class="container">
             <a href="#">
-                <i class="fa fa-tablet"></i>
+                
+                {{--<i class="fa fa-tablet"></i>--}}
+                <img src="{{ asset('images/buy-comics-digital-comics.png') }}" alt="immagine">
                 <span>DIGITAL COMICS</span>
             </a>
             <a href="#">

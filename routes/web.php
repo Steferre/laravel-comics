@@ -23,14 +23,20 @@ Route::get('/', function () {
     return view('myHomepage', $comicsDataArray);
 });
 
-Route::get('/comicPage1', function () {
+Route::get('/comicPage/{index}', function ($index) {
     $comicsData = config('comics');
 
-    $comicsDataArray = [
-        "comicsList" => $comicsData
-    ]; 
+    /*effettuo controlli sull index*/
+
+    if(!is_numeric($index) || $index < 0) {
+        abort(404);
+    }
+    /*setto il singolo fumetto usando l'indice/chiave numerico dell'array non avendo a disposizione l'id univoco*/
+    $singleComic = $comicsData[$index];
     
-    return view('comicPage1', $comicsDataArray);
-})->name('comicPage1');
+    return view('comicPage', [
+        'singleComic' => $singleComic
+    ]);
+})->name('comicPage');
 
 
