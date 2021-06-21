@@ -12,8 +12,8 @@
             <div class="comicsBox">
             @foreach($comicsList as $key => $singleComics)
                 <div class="comicsCard">
-                    <a href="{{ route('comicPage', ['index' => $key]) }}"><img src="{{ $singleComics['thumb'] }}" class="comicImg" alt="comics poster"></a>
-                    <h5><a href="{{ route('comicPage', ['index' => $key]) }}">{{ $singleComics['series'] }}</a></h5>
+                    <a href="{{ route('comics', ['index' => $key]) }}"><img src="{{ $singleComics['thumb'] }}" class="comicImg" alt="comics poster"></a>
+                    <h5><a href="{{ route('comics', ['index' => $key]) }}">{{ $singleComics['series'] }}</a></h5>
                 </div> 
             @endforeach
             </div>

@@ -23,7 +23,7 @@ Route::get('/', function () {
     return view('myHomepage', $comicsDataArray);
 });
 
-Route::get('/comicPage/{index}', function ($index) {
+Route::get('/comics/{index}', function ($index) {
     $comicsData = config('comics');
 
     /*effettuo controlli sull index*/
@@ -34,9 +34,43 @@ Route::get('/comicPage/{index}', function ($index) {
     /*setto il singolo fumetto usando l'indice/chiave numerico dell'array non avendo a disposizione l'id univoco*/
     $singleComic = $comicsData[$index];
     
-    return view('comicPage', [
+    return view('comics', [
         'singleComic' => $singleComic
     ]);
-})->name('comicPage');
+})->name('comics');
 
+Route::get('/characters', function() {
+    return "pagina in lavorazione";
+})->name('characters');
 
+Route::get('/movies', function() {
+    return "pagina in lavorazione";
+})->name('movies');
+
+Route::get('/tv', function() {
+    return "pagina in lavorazione";
+})->name('tv');
+
+Route::get('/games', function() {
+    return "pagina in lavorazione";
+})->name('games');
+
+Route::get('/collectibles', function() {
+    return "pagina in lavorazione";
+})->name('collectibles');
+
+Route::get('/videos', function() {
+    return "pagina in lavorazione";
+})->name('videos');
+
+Route::get('/fans', function() {
+    return "pagina in lavorazione";
+})->name('fans');
+
+Route::get('/news', function() {
+    return "pagina in lavorazione";
+})->name('news');
+
+Route::get('/shop', function() {
+    return "pagina in lavorazione";
+})->name('shop');
