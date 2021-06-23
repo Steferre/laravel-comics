@@ -23,6 +23,7 @@
             flex-direction: column;
             justify-content: space-between;
             border: 1px solid $txtWhite;
+            opacity: 0;
             .comicBook {
                 display: flex;
                 justify-content: center;
@@ -41,6 +42,9 @@
                     color: $txtWhite;
                     font-size: 10px;
                 }
+            }
+            &:hover {
+                opacity: 1;
             }
         }
     }

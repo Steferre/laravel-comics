@@ -10,7 +10,10 @@
         7 => 'fans',
         8 => 'news',
         9 => 'shop'
-    ]
+    ];
+    //dump(Request::route()->getName());
+    /*$routeName = Request::route()->getName();
+    var_dump($routeName);*/
 @endphp
 
 <nav>

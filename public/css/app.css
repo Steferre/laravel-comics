@@ -289,6 +289,7 @@ main .wrapper .my_btn a {
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid #FFF;
+  opacity: 0;
 }
 
 .mainComicPage .blueLine .layover .comicBook {
@@ -312,6 +313,10 @@ main .wrapper .my_btn a {
 .mainComicPage .blueLine .layover .gallery a {
   color: #FFF;
   font-size: 10px;
+}
+
+.mainComicPage .blueLine .layover:hover {
+  opacity: 1;
 }
 
 .contentBox {

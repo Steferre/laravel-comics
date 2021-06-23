@@ -44,7 +44,7 @@ $formatDate = date_format($date, "M d Y");
             </div>
             <div class="rxSide">
                 <span>advertisement</span>
-                <img src="{{ asset('images/adv.jpg') }}" alt="pubblicita'">
+                <img src="{{ asset('images/spot.jpg') }}" alt="pubblicita'">
             </div>
         </div>
     </div>
